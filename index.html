@@ -1,0 +1,374 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>For Ruhi 🖤</title>
+
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Playfair+Display:ital,wght@0,500;0,600;1,500&display=swap" rel="stylesheet">
+
+<style>
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    min-height: 100vh;
+    background: #080808;
+    color: #dedede;
+    font-family: 'DM Sans', sans-serif;
+    padding: 28px 14px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    width: 100%;
+    max-width: 650px;
+    text-align: center;
+}
+
+.top-note {
+    font-size: 10px;
+    letter-spacing: 5px;
+    text-transform: uppercase;
+    color: #777;
+    margin-bottom: 22px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: clamp(38px, 9vw, 53px);
+    font-weight: 500;
+    color: #f5f5f5;
+    margin-bottom: 12px;
+}
+
+.subtitle {
+    font-size: 13px;
+    color: #888;
+    line-height: 1.8;
+    margin-bottom: 28px;
+}
+
+.card {
+    background: #101010;
+    border: 1px solid #303030;
+    border-radius: 5px;
+    padding: 30px 19px;
+    box-shadow: 0 15px 50px #000;
+}
+
+.heart {
+    font-size: 38px;
+    margin-bottom: 18px;
+    animation: heartbeat 2s infinite;
+}
+
+.intro {
+    font-family: 'Playfair Display', serif;
+    font-size: 23px;
+    color: #f3f3f3;
+    margin-bottom: 13px;
+}
+
+.intro-text {
+    color: #999;
+    font-size: 13px;
+    line-height: 1.9;
+    margin-bottom: 23px;
+}
+
+button {
+    background: #ededed;
+    color: #111;
+    border: 1px solid #ededed;
+    border-radius: 3px;
+    padding: 14px 23px;
+    font-family: 'DM Sans', sans-serif;
+    font-size: 11px;
+    letter-spacing: 2px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+button:hover {
+    background: #101010;
+    color: white;
+}
+
+.letter {
+    display: none;
+    text-align: left;
+    margin-top: 28px;
+    padding: 25px 20px;
+    background: #0b0b0b;
+    border: 1px solid #292929;
+    border-radius: 4px;
+    font-size: 13.5px;
+    line-height: 2;
+    overflow-wrap: anywhere;
+}
+
+.letter.show {
+    display: block;
+    animation: appear 1s ease;
+}
+
+.letter p {
+    margin-bottom: 20px;
+}
+
+.greeting {
+    font-family: 'Playfair Display', serif;
+    font-size: 27px;
+    color: #fff;
+    margin-bottom: 25px !important;
+}
+
+.closing {
+    font-family: 'Playfair Display', serif;
+    font-size: 20px;
+    color: white;
+    margin-top: 28px;
+}
+
+.signature {
+    color: #999;
+    text-align: right;
+    font-size: 12px;
+    margin-top: 10px;
+}
+
+.footer {
+    margin-top: 27px;
+    color: #666;
+    font-size: 10px;
+    letter-spacing: 2px;
+    line-height: 2;
+}
+
+@keyframes appear {
+    from {
+        opacity: 0;
+        transform: translateY(14px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes heartbeat {
+    0%, 100% { transform: scale(1); }
+    15% { transform: scale(1.1); }
+    30% { transform: scale(1); }
+    45% { transform: scale(1.06); }
+    60% { transform: scale(1); }
+}
+
+@media (max-width: 480px) {
+    body { padding: 20px 11px; }
+    .card { padding: 25px 14px; }
+    .letter {
+        padding: 21px 15px;
+        font-size: 13px;
+        line-height: 1.95;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *, *::before, *::after {
+        animation: none !important;
+        transition: none !important;
+    }
+}
+</style>
+</head>
+
+<body>
+<main class="container">
+
+    <div class="top-note">A letter I struggled to write</div>
+
+    <h1>For Ruhi 🖤</h1>
+
+    <p class="subtitle">
+        Kuch baatein hain jo shayad main saamne se nahi keh paata.
+    </p>
+
+    <section class="card">
+
+        <div class="heart">🖤</div>
+
+        <h2 class="intro">Dear Ruhi,</h2>
+
+        <p class="intro-text">
+            Please, isse aaram se padhna.
+            Ye letter tumhe blame karne ke liye nahi,
+            balki apne dil ki baat honestly kehne ke liye hai.
+        </p>
+
+        <button id="openButton" onclick="openLetter()">
+            OPEN MY LETTER 🖤
+        </button>
+
+        <article class="letter" id="letter">
+
+            <p class="greeting">Ruhi,</p>
+
+            <p>
+                I think tum sach mein mujhse better deserve karti ho,
+                kyunki maine tumhe pehle se hi bahut hurt kiya hai.
+                And idk, ab mujhe aisa feel ho raha hai jaise maine
+                tumhe cheat kiya ho. Pata nahi kyun, bas ye guilt
+                mujhe andar se kha raha hai.
+            </p>
+
+            <p>
+                Mujhe jab bhi emotional support ki zaroorat hoti hai,
+                I feel like mere aas-paas koi nahi hota. Game mein
+                jab tumne mere cage ki jagah 24 chhod kar 25/26 liya,
+                tab mujhe samajh aa gaya tha ki kuch toh gadbad hai.
+                Phir bhi main tumhare paas aaya.
+            </p>
+
+            <p>
+                Uske baad, jaise tum pehle khelti thi, mujhe burger
+                deti thi aur meri ek life jaane ke baad bhi mera
+                khayal rakhti thi, aaj mujhe waisa kuch feel nahi hua.
+                Isiliye maine game beech mein hi chhod diya aur leave
+                kar diya, bina exact reason bataye.
+            </p>
+
+            <p>
+                Idk, tumhe shayad ye bhi feel nahi hua hoga ki maine
+                game kyun chhoda, kyunki mujhe lagta hai ki ye sab
+                meri wajah se hi ho raha hai. It's called karma,
+                right? Hmmm...
+            </p>
+
+            <p>
+                Maine abhi tak apne exams ke liye properly prepare
+                bhi nahi kiya hai. Mere andar na motivation hai,
+                na energy. Main already itna exhausted feel kar raha
+                hoon ki samajh nahi aa raha sab kuch kaise handle
+                karun. Kabhi-kabhi lagta hai ki main apni life mein
+                sab kuch lose karta ja raha hoon.
+            </p>
+
+            <p>
+                Mujhe aisa feel hota hai ki koi meri baat dhang se
+                nahi sunta, koi mere saath rukta nahi. Bhai ne bhi
+                mujhe reality dikha di hai. Isiliye agar tum bhi
+                mujhse gussa ho jao ya mujhe bura-bhala kehne lago,
+                toh shayad mujhe surprise nahi hoga.
+            </p>
+
+            <p>
+                Idk maine aisi kaunsi galti kar di hai ki main khud
+                ko itna blame kar raha hoon. Maybe maine bahut si
+                cheezein galat ki hain, aur main unse inkaar nahi
+                kar raha. But Ruhi, mujhe apni galtiyon ka ehsaas
+                hai, aur mujhe sach mein afsos hai.
+            </p>
+
+            <p>
+                Please, mujhe har ek cheez ke liye maaf kar dena.
+                Shayad main abhi woh better ladka nahi ban paaya
+                jo tum deserve karti ho. Lekin shayad tum apne liye
+                ek aisa ladka deserve karti ho jo tumhe khush rakhe,
+                tumhari feelings samjhe aur tumhe woh care de
+                jiski tum haqdar ho.
+            </p>
+
+            <p>
+                Mere paas ek hi achievement thi, and that was
+                winning your heart. Aur ab mujhe darr lag raha hai
+                ki kahin main woh bhi na kho doon. Idk mujhe apni
+                journey dobara kahan se continue karni chahiye.
+                I just want to restart my life, apni galtiyon ko
+                samajhna chahta hoon aur dheere-dheere khud ko
+                better banana chahta hoon.
+            </p>
+
+            <p>
+                Main khud ko us ghode jaisa feel karta hoon jo
+                race mein ek bhi kadam aage badhaye bina hi haar
+                gaya ho. Jaise shuruaat karne se pehle hi sab
+                kuch khatam ho gaya ho. But shayad mujhe abhi
+                khud ko sambhalna aur aage badhna seekhna hai.
+            </p>
+
+            <p>
+                Ruhi, I really apologise to you from the bottom
+                of my heart. Main tumse ye expect nahi karta ki
+                tum mujhe turant maaf kar do ya meri har baat
+                samajh jao. Tumhari feelings bhi matter karti hain,
+                aur tumhe jo feel hota hai, woh feel karne ka
+                poora haq hai.
+            </p>
+
+            <p>
+                Main bas chahta hoon ki tumhe pata ho ki mujhe
+                apni galtiyon ka ehsaas hai. I am genuinely sorry
+                for every moment when I hurt you, disappointed
+                you, or failed to make you feel loved and valued.
+            </p>
+
+            <p>
+                I genuinely hope tumhari life ab better ho,
+                tumhe peace mile, tum khush raho aur tumhe woh
+                sab mile jo tum deserve karti ho. Chahe aage
+                humari journey jaisi bhi ho, main dil se chahta
+                hoon ki tum theek raho.
+            </p>
+
+            <p>
+                Aur Ruhi, please ye mat sochna ki tumhari
+                happiness meri galtiyon ka bojh uthana hai.
+                Tumhe apne liye jo sahi lage, woh choose karne
+                ka poora haq hai.
+            </p>
+
+            <p class="closing">
+                I'm truly sorry, Ruhi. 🖤
+            </p>
+
+            <p class="signature">
+                Dil se maafi chahta hoon. 🙏🏻
+            </p>
+
+        </article>
+    </section>
+
+    <footer class="footer">
+        SOME WORDS FROM A TIRED HEART 🖤
+        <br>
+        MADE WITH HONESTY, NOT PERFECTION
+    </footer>
+
+</main>
+
+<script>
+function openLetter() {
+    const letter = document.getElementById('letter');
+    const button = document.getElementById('openButton');
+
+    letter.classList.add('show');
+    button.style.display = 'none';
+
+    setTimeout(function() {
+        letter.scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+        });
+    }, 150);
+}
+</script>
+</body>
+</html>
